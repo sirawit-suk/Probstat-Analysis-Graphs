@@ -22,6 +22,8 @@ qu_count, qu_bins_count = np.histogram(y, bins=1000) #6
 al_pdf = al_count / sum(al_count) 
 al_cdf = np.cumsum(al_pdf) 
 
+print(al_pdf)
+
 qu_pdf = qu_count / sum(qu_count) 
 qu_cdf = np.cumsum(qu_pdf) 
 
