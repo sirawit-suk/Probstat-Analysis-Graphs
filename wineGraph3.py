@@ -90,17 +90,10 @@ al_func[2].set_ylabel("Probability")
 al_func[2].plot(al_bins_count[1:], al_pdf, color="green", label="PDF" ) 
 x1 = np.linspace(lowerB3,lowerB3)
 x2 = np.linspace(upperB3,upperB3)
-al_func[2].plot(x1,y, label="Lower Boudary = {:.4f}".format(lowerB3))
+al_func[2].plot(x1,y, label="Lower Boudary = {:.4f}".format(lowerB3),)
 al_func[2].plot(x2,y, label="Upper Boudary = {:.4f}".format(upperB3))
 al_func[2].legend()
 al_func[2].axis(ymax=1)
-
-
-
-
-
-#plt.plot(x,y, linestyle='')  # solid
-
 
   
 plt.show()
